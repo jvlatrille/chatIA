@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Chat IA interactif</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/showdown/dist/showdown.min.js"></script>
+</head>
+<body>
+    <div class="chat-container">
+        <div id="chat-box"></div>
+        <div class="typing-indicator" id="typing-indicator">
+            <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+        </div>
+        <div id="user-input-container">
+            <input type="text" id="user-input" placeholder="Écris un message" onkeypress="handleKeyPress(event)">
+            <button id="send-button" onclick="sendMessage()">Envoyer</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
